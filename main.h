@@ -41,6 +41,7 @@ typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
+<<<<<<< HEAD
 /* Functions to print numbers */
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -56,4 +57,13 @@ int print_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 
+=======
+/* Funtions to print chars and strings */
+int print_char(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_string(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_percent(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+>>>>>>> b6f81966052f835f0e9a5d2cd8ae93a705bf01ae
 #endif
